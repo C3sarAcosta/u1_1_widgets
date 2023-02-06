@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  const widget = Text(
+  const widgetText = Text(
     'Hola mundo',
     textDirection: TextDirection.ltr,
     style: TextStyle(
@@ -10,7 +10,11 @@ void main() {
     ),
   );
 
-  runApp(widget);
+  const widgetCenter = Center(
+    child: widgetText,
+  );
+
+  runApp(widgetCenter);
 }
 
 //Error el widget Text requiere una direccion 
