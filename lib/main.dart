@@ -9,19 +9,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const widgetText = Text(
-      'Hola mundo',
-      textDirection: TextDirection.ltr,
-      style: TextStyle(
-        color: Color.fromRGBO(255, 66, 165, 1.0),
-        fontSize: 55,
+    return const Center(
+      child: Text(
+        'Hola mundo',
+        textDirection: TextDirection.ltr,
+        style: TextStyle(
+          color: Color.fromRGBO(255, 66, 165, 1.0),
+          fontSize: 55,
+        ),
       ),
     );
-
-    const widgetCenter = Center(
-      child: widgetText,
-    );
-    return widgetCenter;
+    ;
   }
 }
 
