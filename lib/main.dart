@@ -1,20 +1,28 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  const widgetText = Text(
-    'Hola mundo',
-    textDirection: TextDirection.ltr,
-    style: TextStyle(
-      color: Color.fromRGBO(255, 66, 165, 1.0),
-      fontSize: 55,
-    ),
-  );
+  runApp(const MyApp());
+}
 
-  const widgetCenter = Center(
-    child: widgetText,
-  );
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-  runApp(widgetCenter);
+  @override
+  Widget build(BuildContext context) {
+    const widgetText = Text(
+      'Hola mundo',
+      textDirection: TextDirection.ltr,
+      style: TextStyle(
+        color: Color.fromRGBO(255, 66, 165, 1.0),
+        fontSize: 55,
+      ),
+    );
+
+    const widgetCenter = Center(
+      child: widgetText,
+    );
+    return widgetCenter;
+  }
 }
 
 //Error el widget Text requiere una direccion 
